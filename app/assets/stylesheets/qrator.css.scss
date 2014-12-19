@@ -5,11 +5,36 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.genContainer {
-	padding: 5px;
+.formWrapper {	
 	text-align: center;
+}
+
+.genContainer {
+	padding: 5px;	
 	background-color: lightsteelblue;
 	box-shadow: 14px 14px 25px -4px rgba(0,0,0,0.75);
+}
+
+.eingabeListe {
+	list-style-type: none;	
+}
+
+.input {
+	width: 125px;
+	padding-left: 6px;
+	box-shadow: 6px 7px 20px -4px rgba(0, 0, 0, 0.75);
+}
+
+.labelList {
+	width: 150px;	
+}
+
+.liste {
+	padding: 5px;
+}
+
+.button {
+	padding: 5px;
 }
 
 html {
