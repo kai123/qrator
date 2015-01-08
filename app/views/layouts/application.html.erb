@@ -9,22 +9,25 @@
       		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       		</script>
     	<![endif]-->
+
 	</head>
 	<body>
-		<header class="navbar navbar-fixed-top navbar-inverse">
-      		<div class="container">
-        		<%= link_to "Qrator", '#', id: "logo" %>
-        		<nav>
-          			<ul class="nav navbar-nav navbar-right">
-            			<li><%= link_to "Home",   '#' %></li>
-            			<li><%= link_to "Help",   '#' %></li>
-            			<li><%= link_to "About", '#' %></li>
-          			</ul>
-        		</nav>
-     		 </div>
-    	</header>
-    	<div class="container">
-      		<%= yield %>
-    	</div>
+
+		<div id="main-container" class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Qrator</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <%= yield %>
+        </div>      
+      </div>
+
+    </div>
+
   	</body>
 </html>
