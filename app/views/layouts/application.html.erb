@@ -5,6 +5,8 @@
   		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   		<%= csrf_meta_tags %>
+      <!-- Icon neben title -->
+      <link rel="shortcut icon" type="image/x-icon" href="media/images/favicon.png" />
   		<!--[if lt IE 9]>
       		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       		</script>
@@ -36,8 +38,8 @@
               </div>
 
               <ul class="nav navbar-nav navbar-right">
-                <li><%=  link_to 'Über', 'ueber'%></li>
-                <li><%=  link_to 'Kontakt', 'kontakt'%></li>     
+                <li><%=  link_to 'Über', ueber_path %></li>
+                <li><%=  link_to 'Kontakt', contact_path %></li>     
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -66,9 +68,9 @@
               <nav class="navbar navbar-default">
             <div class="container-fluid">            
               <ul class="nav navbar-nav navbar-left">
-                <li><%=  link_to 'Über', 'ueber'%></li>
-                <li><%=  link_to 'Kontakt', 'kontakt'%></li> 
-                <li><%=  link_to 'Impressum', 'impressum'%></li>   
+                <li><%=  link_to 'Über', ueber_path %></li>
+                <li><%=  link_to 'Kontakt', contact_path %></li> 
+                <li><%=  link_to 'Impressum', impressum_path %></li>   
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

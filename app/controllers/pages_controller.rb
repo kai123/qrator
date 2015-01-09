@@ -1,4 +1,4 @@
-class LinkController < ApplicationController
+class PagesController < ApplicationController
   
   def ueber
   		

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  pw: MyString
+  qrcode: MyString
+  datum: MyString
+  qrlink: MyString
+
+two:
+  name: MyString
+  pw: MyString
+  qrcode: MyString
+  datum: MyString
+  qrlink: MyString

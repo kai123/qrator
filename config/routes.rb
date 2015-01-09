@@ -1,14 +1,20 @@
 Rails.application.routes.draw do
   
+  resources :qr_codes  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  
+  #root 'qr_codes#new'
   root 'qrcode#generator'
 
-  get 'ueber' => 'link#ueber'
-  get 'kontakt' => 'link#kontakt'
-  get 'impressum' => 'link#impressum'
+  # get 'senden' => 'qr_codes#index'
+
+  get 'ueber' => 'pages#ueber'
+  get 'kontakt' => 'pages#kontakt', as: "contact"
+  get 'impressum' => 'pages#impressum'
  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'  

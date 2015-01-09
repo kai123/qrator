@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Qrcode:</strong>
+  <%= @qr_code.qrcode %>
+</p>
+
+<p>
+  <strong>Qrlink:</strong>
+  <%= @qr_code.qrlink %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @qr_code.url %>
+</p>
+
+<p>
+  <strong>Src:</strong>
+  <%= @qr_code.src %>
+</p>
+
+<p>
+  <strong>Medium:</strong>
+  <%= @qr_code.medium %>
+</p>
+
+<p>
+  <strong>Campaign:</strong>
+  <%= @qr_code.campaign %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @qr_code.content %>
+</p>
+
+<p>
+  <strong>Term:</strong>
+  <%= @qr_code.term %>
+</p>
+
+<%= link_to 'Edit', edit_qr_code_path(@qr_code) %> |
+<%= link_to 'Back', qr_codes_path %>
