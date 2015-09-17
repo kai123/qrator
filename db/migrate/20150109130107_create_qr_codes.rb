@@ -8,7 +8,7 @@ class CreateQrCodes < ActiveRecord::Migration
       t.string :medium
       t.string :campaign
       t.string :content
-      t.string :term
+      t.string :term      
 
       t.timestamps
     end

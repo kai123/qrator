@@ -1,44 +1,71 @@
-<p id="notice"><%= notice %></p>
+<div class"container">
+  <div class="row">
+    <div class="col-md-9 col-md-offset-3">    
 
-<p>
-  <strong>Qrcode:</strong>
-  <%= @qr_code.qrcode %>
-</p>
+      <p id="notice">
+        <h1><%= notice %></h1>
+      </p>
 
-<p>
-  <strong>Qrlink:</strong>
-  <%= @qr_code.qrlink %>
-</p>
+      <p>
+        <strong>Qrcode:</strong>
+        <%= @qr_code.qrcode %><br>
+        <%= image_tag qr_code_path(@qr_code, format: :svg) %>
+        <!--
+        <%= image_tag qr_code_path(@qr_code, format: :png) %>
+        <%= image_tag qr_code_path(@qr_code, format: :jpeg) %>
+        -->
+      </p>
+      
+      <p>
+        <strong>Qrlink:</strong>
+        <%= @qr_code.qrlink %>  
+      </p>
+      
+      <p>
+        <strong>Basic Url:</strong>
+        <%= @qr_code.url %>
+      </p>
+      
+      <p>
+        <strong>Src:</strong>
+        <%= @qr_code.src %>
+      </p>
+      
+      <p>
+        <strong>Medium:</strong>
+        <%= @qr_code.medium %>
+      </p>
+      
+      <p>
+        <strong>Campaign:</strong>
+        <%= @qr_code.campaign %>
+      </p>
+      
+      <p>
+        <strong>Content:</strong>
+        <%= @qr_code.content %>
+      </p>
+      
+      <p>
+        <strong>Term:</strong>
+        <%= @qr_code.term %>
+      </p>
+      
+      <p>
+        <strong>Full Url:</strong>
+        <%= @qr_code.full_url %>        
+      </p>
 
-<p>
-  <strong>Url:</strong>
-  <%= @qr_code.url %>
-</p>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Src:</strong>
-  <%= @qr_code.src %>
-</p>
 
-<p>
-  <strong>Medium:</strong>
-  <%= @qr_code.medium %>
-</p>
-
-<p>
-  <strong>Campaign:</strong>
-  <%= @qr_code.campaign %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @qr_code.content %>
-</p>
-
-<p>
-  <strong>Term:</strong>
-  <%= @qr_code.term %>
-</p>
-
-<%= link_to 'Edit', edit_qr_code_path(@qr_code) %> |
-<%= link_to 'Back', qr_codes_path %>
+<div class="row">
+      <div class="col-md-9 col-md-offset-3">          
+        <button type="button" class="btn btn-default"><%= link_to 'Listenansicht', qr_codes_path %></button>
+        <div>
+          </br>
+        </div>
+      </div>  
+</div> 

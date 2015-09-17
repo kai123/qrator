@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get 'ueber' => 'pages#ueber'
   get 'kontakt' => 'pages#kontakt', as: "contact"
   get 'impressum' => 'pages#impressum'
+
+  get 'index' => 'qr_codes#index' 
  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'  

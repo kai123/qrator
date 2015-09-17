@@ -27,25 +27,22 @@ a {
 	text-decoration: none;
 }
 
-.footer {
-	margin-left: -15px;
-}
-
 div.bg {	
-	background-color: #E6E6E6;
-	box-shadow: 4px 4px 25px grey;
-}
-
-.panel {
-	width: 50%;	
+	background-color: #E6E6E6;	
 }
 
 ul.liste {
 	list-style: none;
 }
 
-.qr-wrapper {
-	margin-left: -8px;
-	margin-bottom: 20px;
-	display: none;
+.panel {	
+	border-color: #F9B120;
 }
+
+.panel-primary > .panel-heading {
+	background-color: #F9B120;
+	color: black;
+	border-color: #F9B120;	
+}
+
+
