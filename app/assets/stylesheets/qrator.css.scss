@@ -6,7 +6,7 @@
 @import "bootstrap";
 
 .container-fluid {
-  background-color: #F9B120; 
+  background-color: #F9B120;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -19,7 +19,6 @@
 
 a:link {
   color: black;
-  text-decoration: none;
 }
 
 a {
@@ -27,22 +26,34 @@ a {
 	text-decoration: none;
 }
 
-div.bg {	
-	background-color: #E6E6E6;	
+div.bg {
+	border-color: #E6E6E6;
+	border-style: solid;
 }
 
 ul.liste {
 	list-style: none;
 }
 
-.panel {	
+.panel {
 	border-color: #F9B120;
+	border-style: solid;
 }
 
 .panel-primary > .panel-heading {
 	background-color: #F9B120;
 	color: black;
-	border-color: #F9B120;	
+	border-color: #F9B120;
 }
 
+// footer/header
+.bar {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 0;
+}
 
+//QR-Code Image
+.qr_code_graph {
+	position: relative;
+}

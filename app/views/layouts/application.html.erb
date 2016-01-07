@@ -14,7 +14,7 @@
 
 </head>
 	<body>
-		<div id="main-container" class="container">
+		<div id="main-container" class="container bar">
 			<div class="row">
 				<div class="col-md-12">
 					<nav class="navbar navbar-default">
@@ -30,14 +30,14 @@
 
 								<div class="navbar-brand">
 									<%=  link_to 'Qrator', '/' %>
-								</div> 
+								</div>
 
 							</div>
 
 							<ul class="nav navbar-nav navbar-right">
 								<li><%=  link_to 'Über', ueber_path %></li>
-								<li><%=  link_to 'Kontakt', contact_path %></li>  
-								<li><%=  link_to 'QR-Codes', index_path %></li>  
+								<li><%=  link_to 'Kontakt', contact_path %></li>
+								<li><%=  link_to 'QR-Codes', index_path %></li>
 							</ul>
 						</div>
 					</nav>
@@ -48,23 +48,25 @@
 				<div class="col-md-12">
 					<div class="bg">
 						<%= yield %>
-					</div> 
-				</div>      
+					</div>
+				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-md-12">          
-					<footer class="footer">
-						<nav class="navbar navbar-default">
-							<div class="container-fluid">            
-								<ul class="nav navbar-nav navbar-left">
-									<li><%=  link_to 'Über', ueber_path %></li>
-									<li><%=  link_to 'Kontakt', contact_path %></li> 
-									<li><%=  link_to 'Impressum', impressum_path %></li>   
-								</ul>
-							</div>
-						</nav>
-					</footer>
+			<div class="container bar">
+				<div class="row">
+					<div class="col-md-12">
+						<footer class="footer">
+							<nav class="navbar navbar-default">
+								<div class="container-fluid">
+									<ul class="nav navbar-nav navbar-left">
+										<li><%=  link_to 'Über', ueber_path %></li>
+										<li><%=  link_to 'Kontakt', contact_path %></li>
+										<li><%=  link_to 'Impressum', impressum_path %></li>
+									</ul>
+								</div>
+							</nav>
+						</footer>
+					</div>
 				</div>
 			</div>
 		</div>
