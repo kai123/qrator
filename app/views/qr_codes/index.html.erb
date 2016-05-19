@@ -1,7 +1,11 @@
+<p id="notice">
+	<h1><%= notice %></h1>
+</p>
 
 <div id="main-container-2" class="container">
 	<div class="col-md-12">
-		<h1>QR Codes</h1>
+		<h1>QR Codes <%= link_to '+', new_qr_code_path %> </h1>
+
 		<table class="table table-condensed table-bordered table-striped table-hover">
 			<thead>
 				<tr>
@@ -25,7 +29,7 @@
 					<td><%= qr_code.term %></td>
 					<td>
 						<button type="button" class="btn btn-default">
-						<%#= link_to "Show", show_qr_code_path(qr_code) %>
+						<%= link_to "Show", qr_code_path(qr_code) %>
 							<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
 						</button>
 					</td>
@@ -45,6 +49,5 @@
 			<% end %>
 			</tbody>
 		</table>
-		<button type="button" class="btn btn-link"><%= link_to 'Neuer QR-Code', new_qr_code_path %></button>
 	</div>
 </div>
